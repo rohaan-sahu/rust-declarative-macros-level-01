@@ -1,3 +1,9 @@
+mod generate_function;
+//use crate::generate_function;
+
+/*--Ghode in the Stable macro--*/
+generate_function!(foo,bar,baz);
+
 /*--Macros--*/
 macro_rules! say_hello {
 	() => {
@@ -75,6 +81,11 @@ make_struct!(Label, text, String);
 /*--Main function--*/
 
 fn main() {
+	println!("\n100xdevs notes. Ghode Khol assignment",);
+	foo();
+	baz();
+	bar();
+
 	println!("\nSimplest possible Macro");
 	say_hello!();
 
